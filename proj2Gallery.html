@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Y, Rithya - LB Coats
+    </title>
+    <link rel="stylesheet" href="proj2Layout.css">
+</head>
+<body>
+    <div class="grid-container">
+    <div class="grid-item grid-item-head">
+    <h1><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/294178690_1036115367266841_6975628237145767648_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=669YH2ZpMp0AX9AAAyq&_nc_ht=scontent-lax3-1.xx&oh=00_AT9au2FTxprnJmQpxz0jYPGTpce0RnYXHIAZPAo-TXtX8w&oe=62DA1EFD" alt="LB COATS logo"></h1>
+    </div></div>
+    
+    <div class="grid-container">
+    <div class="grid-item grid-item-nav">
+    <ul>
+    <li><a href="index.html">Welcome</a></li>
+    <li><a href="proj2Service.html">Services</a></li>
+    <li><a href="proj2Gallery.html">Gallery</a></li>
+    <li><a href="proj2FaqInfo.html">F.A.Q</a></li>
+    </ul>
+    </div></div>
+<h1>Gallery of completed projects</h1>
+
+<h2>Gallery of completed projects with color and finished samples</h2>
+<div class="slideshow-container">
+
+<div class="slideShow">
+    <div class="numbertext">1 / 5</div>
+    <img src="https://harleyalaskablog.files.wordpress.com/2012/02/red-tank-of-harley-davidson-seventy-two-sportster1.jpg" style="width:100%" alt="Harley Davidson">
+    <div class="text">Candy Apple Red Paint on a Harley Davidson Sportster</div>
+</div>
+
+<div class="slideShow">
+    <div class="numbertext">2 / 5</div>
+    <img src="https://headlights.com/wp-content/uploads/2020/10/photo-1596006921627-f464dd68a447.jpeg" style="width:100%" alt="Porsche 911">
+    <div class="text">Matte Black on this Porsche 911</div>
+</div>
+
+<div class="slideShow">
+    <div class="numbertext">3 / 5</div>
+    <img src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/topics/magazine-article-pool/2020/g8x-individual/bmw-m3-bmw-individual-special-paint-finish-macao-blue-metallic.jpg/jcr:content/renditions/cq5dam.resized.img.890.medium.time1614079208638.jpg" style="width:100%" alt="BMW M4">
+    <div class="text">Gloss Purple with Sparkles on this BMW M4</div>
+</div>
+
+<div class="slideShow">
+    <div class="numbertext">4 / 5</div>
+    <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/mustang_2.jpg?q=50&fit=crop&w=750&dpr=1.5" style="width:100%" alt="Dodge Charger">
+    <div class="text">Chameleon paint work on this Dodge Charger 392</div>
+</div>
+
+<div class="slideShow">
+    <div class="numbertext">5 / 5</div>
+    <img src="https://carpaintchiprepair.com/wp-content/uploads/2017/02/before-768x384.jpg" style="width:100%" alt="Honda Accord">
+    <div class="text">Paint repair on a Honda Accord</div>
+</div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slideShow");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+    <div class="grid-container">
+    <div class="grid-item grid-item-nav">
+<footer>
+    Creator: Y, Rithya
+    Last Updated: 2022 07 26
+</footer>
+    </div></div>
+</body>
+</html>
